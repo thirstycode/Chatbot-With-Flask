@@ -5,12 +5,8 @@ from flask_sqlalchemy import SQLAlchemy
 
 socketio = SocketIO()
 
-
 def create_app(app,debug=False):
 	"""Create an application."""
-
-	# with open('data.pkl', 'w') as f:  # Python 3: open(..., 'wb')
-	#     pickle.dump([db], f)
 
 	app = Flask(__name__)
 	app.debug = debug
