@@ -10,7 +10,7 @@ def joined(message):
     A status message is broadcast to all people in the room."""
     room = session.get('room')
     join_room(room)
-    
+#     edit these two lines below to keep/remove anonymous in chat
     # emit('status', {'msg': session.get('name') + ' has entered the room.'}, room=room)
     emit('status', {'msg': 'Anonymous' + ' has entered the room.'}, room=room)
 
@@ -20,6 +20,7 @@ def text(message):
     """Sent by a client when the user entered a new message.
     The message is sent to all people in the room."""
     room = session.get('room')
+    #     edit these two lines below to keep/remove anonymous in chat
     # emit('message', {'msg': session.get('name') + ':' + message['msg']}, room=room)
     emit('status', {'msg': 'Anonymous' + ':' + message['msg']}, room=room)
 
@@ -29,5 +30,6 @@ def left(message):
     A status message is broadcast to all people in the room."""
     room = session.get('room')
     leave_room(room)
+    #     edit these two lines below to keep/remove anonymous in chat
     # emit('status', {'msg': session.get('name') + ' has left the room.'}, room=room)
     emit('status', {'msg': 'Anonymous' +  ' has left the room.'}, room=room)
