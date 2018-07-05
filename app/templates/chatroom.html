@@ -1,0 +1,30 @@
+	{% extends "base.html" %}
+{% block content %}
+{% if session['logged_in'] %}
+   
+	{% if data %}
+	<h3>{{data}}</h3>
+	{% else %}
+        <h1>ChatRoom</h1>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            {{ form.name.label }}: {{ form.name() }} {% for error in form.name.errors %}{{ error }}{% endfor %}<br>
+            {{ form.room.label }}: {{ form.room() }} {% for error in form.room.errors %}{{ error }}{% endfor %}<br>
+            {{ form.submit() }}
+        </form>
+	{% endif %}
+
+{% else %}
+<p>You are not logged in!</p>
+<p>Please Login To Continue</p>
+
+<a href="/login">Login</a> 
+<a href="/register">Register</a>
+
+{% endif %}
+{% endblock %}
+
+
+
+
+
