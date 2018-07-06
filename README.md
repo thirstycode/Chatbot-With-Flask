@@ -26,4 +26,4 @@
   - Feel free to create an issue in repo. I'll be happy to help you 😃
   
    
- **Chatbot in Tkinter to chat over network - [Here](https://github.com/thirstycode/Chatbot-With-tkinter).**
+ **Chatbot in Tkinter - [Here](https://github.com/thirstycode/Chatbot-With-tkinter).**
