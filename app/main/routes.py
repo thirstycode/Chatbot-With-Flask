@@ -45,11 +45,14 @@ def login():
 @main.route('/register/', methods=['GET', 'POST'])
 def register():
     """Register Form"""
-    if request.method == 'POST':
-        new_user = User(username=request.form['username'], password=request.form['password'])
-        db.session.add(new_user)
-        db.session.commit()
-        return render_template('login.html')
+    try:
+        if request.method == 'POST':
+            new_user = User(username=request.form['username'], password=request.form['password'])
+            db.session.add(new_user)
+            db.session.commit()
+            return render_template('login.html')
+    except:
+        return 'User already registered. Please try again with new unique name'
     return render_template('register.html')
 
 @main.route("/logout")
