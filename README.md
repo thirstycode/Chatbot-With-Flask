@@ -13,7 +13,7 @@
 ```
 
 #### Execute It:
-  - ```bash python app_main.py ```
+  - ```python app_main.py ```
   - Goto localhost/ in browser
 #### Keep/Remove 'anonymous' user:
   - Open 'app/main/events.py'
