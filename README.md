@@ -20,8 +20,10 @@
 #### Keep/Remove 'anonymous' user:
   - Open 'app/main/events.py'
   - Remove commented lines to remove anonymity.
-  
- **Chatbot in Tkinter to chat over network - [Here](https://github.com/thirstycode/Chatbot-With-tkinter).**
+
  
  #### Having issues in code? :
   - Feel free to create an issue in repo. I'll be happy to help you 😃
+  
+   
+ **Chatbot in Tkinter to chat over network - [Here](https://github.com/thirstycode/Chatbot-With-tkinter).**
