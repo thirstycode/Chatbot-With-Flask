@@ -43,11 +43,12 @@
         </script>
     </head>
 
-                <h1>ChatRoom: {{ room }}</h1>
-        <textarea id="chat" cols="80" rows="20"></textarea><br><br>
-        <input id="text" size="80" placeholder="Enter your message here"><br><br>
-        <a href="#" onclick="leave_room();">Leave ChatRoom</a>
-
+                <h2>ChatRoom: {{ room }}</h2>
+                <div style="text-align:center;">
+        <textarea id="chat" cols="80" rows="20" style="text-align:center;"></textarea><br><br>
+        <input id="text" size="80" placeholder="Enter your message here" style="text-align:center;"><br><br>
+        <a href="#" onclick="leave_room();" style="text-align:center;">Leave ChatRoom</a>
+</div>
 
     {% endif %}
 

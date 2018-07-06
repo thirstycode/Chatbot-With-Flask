@@ -5,20 +5,22 @@
 	{% if data %}
 	<h3>{{data}}</h3>
 	{% else %}
-
+<br>
+<div style="text-align:center;">
 
 <p>You're logged in already!</p>
-
+</div>	
 
 
 
 	{% endif %}
 
 {% else %}
-
-
+<br>
+<div style="text-align:center;">
 <p>You are not logged in!</p>
 <p>Please Login To Continue</p>
+</div>
 
 {% endif %}
 {% endblock %}

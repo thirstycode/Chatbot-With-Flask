@@ -6,9 +6,9 @@
 <a href="/logout">Logout</a> <br> <br>
 <a href="/chatroom">Goto chatroom</a>
 {% else %}
-
+<body>
 <h2>Register</h2>
-<!-- <form action="/register/" method="POST">
+<form action="/register/" method="POST">
 	<div class="login">
 		<div class="login-screen">
 
@@ -29,11 +29,11 @@
 		</div>
 	</div>
 </form>
- -->
-<form action="/register/" method="POST">
+
+<!-- <form action="/register/" method="POST">
   <input type="username" name="username" placeholder="Username">
   <input type="password" name="password" placeholder="Password">
   <input type="submit" value="Sign Up">
-</form>
+</form> --></body>
 {% endif %}
 {% endblock %}
